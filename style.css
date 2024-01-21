@@ -27,17 +27,15 @@ video {
   position: absolute;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
   z-index:-100;
 }
 
 /* Header Styles */
 header {
     color: rgb(232, 230, 227);
-    padding: 1rem 0;
+    padding-top: 1rem;
     text-align: center;
-    height: 100vh;
     overflow: hidden;
 }
 
@@ -133,6 +131,8 @@ footer {
 /* Wave Separator Styles */
 .wave-separator {
     background-color: #00d5ff00;
+    bottom: -1rem;
+    position: relative;
 }
 
 .wave-separator svg path{
@@ -202,8 +202,12 @@ svg path:nth-child(2){
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin: 10px 0;
+    } */
+
+    #main-banner {
+        display: none;
     }
 }

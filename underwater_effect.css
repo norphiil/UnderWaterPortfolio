@@ -4,7 +4,7 @@
   position: relative;
   width: 100vw;
   height: 100%;
-  background-image: linear-gradient(0deg, #182848, #2980b9)
+  background-image: linear-gradient(0deg, #182848, rgb(38, 132, 190))
 }
 
 .bubble {
@@ -84,7 +84,7 @@
 .bubble--6 {
   width: 10px;
   height: 10px;
-  left: 80%;
+  left: 50%;
   animation-delay: 3s;
   animation-duration: 30s;
   opacity: 0.4;
@@ -93,7 +93,7 @@
 .bubble--7 {
   width: 15px;
   height: 15px;
-  left: 90%;
+  left: 30%;
   animation-delay: -7s;
   animation-duration: 25s;
   opacity: 0.3;
@@ -141,7 +141,7 @@
 .bubble--13 {
   width: 18px;
   height: 18px;
-  left: 70%;
+  left: 60%;
   animation-delay: -3s;
   animation-duration: 18s;
   opacity: 0.4;
@@ -159,7 +159,7 @@
 .bubble--15 {
   width: 28px;
   height: 28px;
-  left: 85%;
+  left: 55%;
   animation-delay: -12s;
   animation-duration: 20s;
   opacity: 0.3;
@@ -232,7 +232,7 @@
 .bubble--23 {
   width: 25px;
   height: 25px;
-  left: 90%;
+  left: 10%;
   bottom: 30px;
   animation-delay: -10.5s;
   animation-duration: 19s;
