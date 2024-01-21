@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="underwater_effect.css" />
+    <link rel="stylesheet" href="image_spawn.css" />
+  </head>
+  <body>
+    <header id="header">
+      <video autoplay muted loop>
+        <source src="assets/ohv2.mp4" type="video/mp4" />
+      </video>
+      <div id="logo">My Portfolio</div>
+      <nav>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#featured-work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="main-banner" class="animate-on-scroll">
+        <h1 class="word">Dive into my World</h1>
+        <button>Explore My Work</button>
+      </section>
+      <div class="wave-separator">
+        <svg viewBox="0 0 1320 500">
+          <path
+            fill-opacity="0.9"
+            d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	"
+            fill="#0f5e9c"
+          />
+          <path
+            fill-opacity="0.8"
+            d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	"
+            fill="#1ca3ec"
+          />
+          <path
+            fill-opacity="0.7"
+            d="
+	M0,192
+	C220,100,440,100,660,192
+	C880,290,1100,290,1320,192
+	L1320 500
+	L0 500
+	"
+            fill="#2980b9"
+          />
+        </svg>
+      </div>
+    </header>
+
+    <main class="ocean">
+      <section>
+        <div class="bubble bubble--1"></div>
+        <div class="bubble bubble--2"></div>
+        <div class="bubble bubble--3"></div>
+        <div class="bubble bubble--4"></div>
+        <div class="bubble bubble--5"></div>
+        <div class="bubble bubble--6"></div>
+        <div class="bubble bubble--7"></div>
+        <div class="bubble bubble--8"></div>
+        <div class="bubble bubble--9"></div>
+        <div class="bubble bubble--10"></div>
+        <div class="bubble bubble--11"></div>
+        <div class="bubble bubble--12"></div>
+        <div class="bubble bubble--13"></div>
+        <div class="bubble bubble--14"></div>
+        <div class="bubble bubble--15"></div>
+        <div class="bubble bubble--16"></div>
+        <div class="bubble bubble--17"></div>
+        <div class="bubble bubble--18"></div>
+        <div class="bubble bubble--19"></div>
+        <div class="bubble bubble--20"></div>
+        <div class="bubble bubble--21"></div>
+        <div class="bubble bubble--22"></div>
+        <div class="bubble bubble--23"></div>
+        <div class="bubble bubble--24"></div>
+      </section>
+
+      <section id="featured-work" class="featured-work animate-on-scroll">
+        <h2>Featured Work</h2>
+
+        <div data-inviewport="scale-in" class="portfolio-item hover-effect">
+          <img src="assets/images.png" alt="Work Description" />
+          <div class="portfolio-description">
+            <h3>Project Title</h3>
+            <p>Short description of the project...</p>
+          </div>
+        </div>
+        <div class="portfolio-item hover-effect">
+          <img src="assets/images.png" alt="Work Description" />
+          <div class="portfolio-description">
+            <h3>Project Title</h3>
+            <p>Short description of the project...</p>
+          </div>
+        </div>
+        <!-- Repeat for other portfolio items -->
+
+        <svg style="width: 0; height: 0">
+          <filter id="filter1">
+            <feTurbulence baseFrequency="0" numOctaves="1">
+              <animate attributeName="baseFrequency" dur="3s" values="0.01;0" />
+            </feTurbulence>
+            <feDisplacementMap scale="40" in="SourceGraphic" />
+          </filter>
+        </svg>
+      </section>
+
+      <section id="about" class="animate-on-scroll">
+        <h2>About Me</h2>
+        <p>Your introduction goes here.</p>
+        <!-- Add your image here -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023-2024 CADET Florent. All rights reserved.</p>
+      <!-- Social media links -->
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.image_spawn {
+    position: relative;
+	flex: 0 0 calc(33% - 40px);
+	margin: 0 20px;
+	overflow: hidden;
+	opacity: 0;
+	animation: 1s svg_anim ease-in-out;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+.image_spawn img{
+	max-width: 100%;
+	filter: url(#filter1);
+    animation: boat 3s  cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite;
+}
+
+.image_spawn:nth-child(3n + 1){top: -60px;}
+.image_spawn:nth-child(3n + 2){top: 60px; animation-delay: 0.5s;}
+.image_spawn:nth-child(3n + 3){top: -60px; animation-delay: 1s;}
+
+@keyframes svg_anim{
+	0%{ opacity: 0; }
+	100%{ opacity: 1; top:0;  }
+}
+
+@keyframes boat {
+  0%,100% {
+    transform: translate3d(0px,0px,0px) rotateZ(-2deg);
+  }
+  50% {    
+    transform: translate3d(0px,10px,10px) rotateZ(5deg);
+  }
+}
